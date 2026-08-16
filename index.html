@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mac RPM Controller is an independent fan-monitoring and fan-control utility for compatible Intel Apple computers running Windows.">
+  <meta name="theme-color" content="#0067c0">
+  <title>Mac RPM Controller</title>
+  <link rel="icon" href="mac-rpm-controller.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell navigation">
+      <a class="brand" href="#top" aria-label="Mac RPM Controller home">
+        <img src="mac-rpm-controller-fan.png" alt="" width="44" height="44">
+        <span>Mac RPM Controller</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#compatibility">Compatibility</a>
+        <a href="#safety">Safety</a>
+        <a href="#install">Install</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Universal x64 release · Version 0.9.0</p>
+          <h1>Fan monitoring and control for Intel Macs running Windows.</h1>
+          <p class="lead">One installer detects Windows XP, Vista, 7, 10, or 11 and installs the correct native interface without changing the shared hardware-control engine.</p>
+          <div class="actions">
+            <a class="button primary" href="MacRPMController-0.9.0-Setup-x64.exe" download>Download universal installer</a>
+            <a class="button secondary" href="#install">Installation details</a>
+          </div>
+          <p class="download-note">Windows x64 · Administrator access required · 2.56 MB</p>
+        </div>
+        <div class="hero-art" aria-label="Mac RPM Controller application identity">
+          <div class="logo-panel">
+            <img src="mac-rpm-controller-fan.png" alt="Mac RPM Controller fan logo" width="230" height="230">
+            <span>Mac RPM Controller</span>
+            <small>Universal Windows edition</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice affiliation" aria-labelledby="independent-title">
+      <div class="shell notice-layout">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <div>
+          <h2 id="independent-title">Independent, unofficial software</h2>
+          <p>This project is not affiliated with, authorized by, sponsored by, supported by, or endorsed by Apple Inc. or Microsoft Corporation. Apple, Mac, MacBook, MacBook Air, MacBook Pro, iMac, Mac mini, Boot Camp, and related marks are trademarks of their respective owners.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <p class="eyebrow">Real hardware data</p>
+        <h2>One interface, every supported Windows generation</h2>
+        <p class="section-intro">The universal release reads the Apple SMC directly. It never invents RPM values, limits, fan counts, or temperatures when hardware access is unavailable.</p>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">RPM</span><h3>Dynamic fan detection</h3><p>Enumerates the fans exposed by the SMC instead of assuming a fixed count. Each fan keeps its own reported minimum and maximum RPM.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">°C</span><h3>Real temperature sensors</h3><p>Shows only sensors that are actually exposed and successfully read, including CPU, GPU, storage, and system categories.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">SMC</span><h3>Four control modes</h3><p>Automatic, constant RPM, sensor-based control, and per-fan maximum speed—with live hardware-range validation.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">42</span><h3>Complete localization</h3><p>Forty-two selectable interface and installer languages, including right-to-left support for Arabic, Hebrew, and Persian.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">↻</span><h3>Automatic restoration</h3><p>Fans changed during the session are returned to Apple automatic control during a normal application exit.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">PC</span><h3>Native operating-system UI</h3><p>XP uses XP visual styles, Vista and 7 use native Aero, and Windows 10 and 11 use their native controls and Shell-provided icons.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alternate" id="compatibility">
+      <div class="shell">
+        <p class="eyebrow">Compatibility</p>
+        <h2>The installer chooses the correct build</h2>
+        <div class="table-grid">
+          <div class="table-card">
+            <h3>Operating systems</h3>
+            <div class="table-wrap"><table>
+              <thead><tr><th>Windows version</th><th>Architecture</th><th>Runtime</th></tr></thead>
+              <tbody>
+                <tr><td>XP Professional x64 SP2</td><td>x64</td><td>.NET 4.0</td></tr>
+                <tr><td>Vista SP2</td><td>x64</td><td>.NET 4.6</td></tr>
+                <tr><td>7 SP1</td><td>x64</td><td>.NET 4.6</td></tr>
+                <tr><td>10</td><td>x64</td><td>.NET 4.x</td></tr>
+                <tr><td>11</td><td>x64</td><td>.NET 4.8/4.8.1</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+          <div class="table-card">
+            <h3>Intel Apple families</h3>
+            <div class="table-wrap"><table>
+              <thead><tr><th>Family</th><th>Availability</th></tr></thead>
+              <tbody>
+                <tr><td>MacBook Pro</td><td>Where compatible SMC fans exist</td></tr>
+                <tr><td>MacBook Air</td><td>Where compatible SMC fans exist</td></tr>
+                <tr><td>MacBook</td><td>Where compatible SMC fans exist</td></tr>
+                <tr><td>iMac</td><td>Where compatible SMC fans exist</td></tr>
+                <tr><td>Mac mini</td><td>Where compatible SMC fans exist</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+        </div>
+        <p class="compatibility-note"><strong>Important:</strong> A model name in the database is not proof of fan-control support. Control is enabled only when the live SMC exposes readable fans, sane RPM limits, and safely identified writable keys. Unknown or read-only configurations remain available for monitoring when possible.</p>
+      </div>
+    </section>
+
+    <section class="section safety" id="safety">
+      <div class="shell">
+        <p class="eyebrow">Read before installing</p>
+        <h2>Low-level fan control carries real risk</h2>
+        <div class="warning-panel">
+          <div class="warning-mark" aria-hidden="true">!</div>
+          <div>
+            <p><strong>Incorrect fan settings can cause overheating, crashes, accelerated component wear, data loss, or permanent hardware damage.</strong> This software is provided without warranty. You are responsible for deciding whether it is appropriate for your computer.</p>
+            <ul>
+              <li>Keep the computer attended while testing a manual or sensor-based profile.</li>
+              <li>Never run two SMC or fan-control utilities at the same time.</li>
+              <li>Do not disable RPM safeguards or use unknown SMC keys.</li>
+              <li>A forced shutdown, crash, or power loss can bypass user-mode restoration.</li>
+              <li>The installer uses a privileged direct-I/O helper and requires Administrator access.</li>
+              <li>Windows XP, Vista, and 7 are out of Microsoft support; use them offline or in a controlled test environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <div class="shell install-layout">
+        <div>
+          <p class="eyebrow">Installation</p>
+          <h2>Use the universal setup</h2>
+          <ol class="steps">
+            <li><span>1</span><div><strong>Download the installer</strong><p>Save the universal x64 setup to the compatible Intel Mac running Windows.</p></div></li>
+            <li><span>2</span><div><strong>Verify the file</strong><p>Compare its SHA-256 value with the checksum shown on this page.</p></div></li>
+            <li><span>3</span><div><strong>Run as administrator</strong><p>Choose an installation path. Setup detects Windows and installs only its matching payload.</p></div></li>
+            <li><span>4</span><div><strong>Begin with Automatic mode</strong><p>Confirm the model, fan limits, temperatures, and diagnostics before trying manual control.</p></div></li>
+          </ol>
+        </div>
+        <aside class="release-card" aria-label="Release download">
+          <img src="mac-rpm-controller-fan.png" alt="" width="84" height="84">
+          <h3>Mac RPM Controller 0.9.0</h3>
+          <p>Universal Windows x64 installer</p>
+          <a class="button primary full" href="MacRPMController-0.9.0-Setup-x64.exe" download>Download setup</a>
+          <dl>
+            <div><dt>File</dt><dd>MacRPMController-0.9.0-Setup-x64.exe</dd></div>
+            <div><dt>Size</dt><dd>2,680,961 bytes</dd></div>
+            <div><dt>SHA-256</dt><dd class="checksum">A6482B98EE31131281414135E2BBF6D52BB09B78FBDCA73679C9A7E020CE968F</dd></div>
+          </dl>
+          <p class="legal-links"><a href="LICENSE">MIT License</a> · <a href="THIRD-PARTY-NOTICES.txt">Third-party notices</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alternate languages" id="languages">
+      <div class="shell">
+        <p class="eyebrow">Language support</p>
+        <h2>Forty-two complete interface languages</h2>
+        <p>Abkhazian, Afrikaans, Arabic, Armenian, Azerbaijani, Bashkir, Simplified Chinese, Crimean Tatar (Cyrillic), Czech, Danish, English, Finnish, French, Georgian, German, Greek, Hebrew, Hungarian, Icelandic, Italian, Japanese, Kazakh, Korean, Kyrgyz, Luxembourgish, Mongolian, Norwegian, Norwegian Bokmål, Norwegian Nynorsk, Ossetian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Spanish, Swedish, Tatar, Thai, Turkish, and Yakut.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-layout">
+      <div><strong>Mac RPM Controller</strong><p>Independent fan monitoring and control for compatible Intel Apple computers running Windows.</p></div>
+      <div class="footer-legal"><p>Copyright © 2026 A097MPRUS</p><p>Released under the <a href="LICENSE">MIT License</a>.</p><p>Not affiliated with Apple Inc. or Microsoft Corporation.</p></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Third-party notices
+
+## InpOut32 / InpOutx64 1.5.0.1
+
+The portable hardware-proof package includes `InpOutx64.dll` from Phillip
+Gibbons' official InpOut32/x64 binary distribution. It is used only as a
+ring-0 bridge for byte I/O to the Intel Apple SMC ports.
+
+- Project page: <https://www.highrez.co.uk/downloads/inpout32/>
+- Official archive: `InpOutBinaries_1501.zip`
+- Archive SHA-256: `7B56D19F0B18E5432A6564A5928CE53439DD5A632BCEC1BB52A117BE640B533F`
+- Bundled x64 DLL SHA-256: `5F27ED4D5CD58A1EE23DEEB802E09E73F3A1D884CE2135F6E827F67B171269E7`
+- License: MIT; reproduced in `third_party/InpOut/LICENSE.txt`
+
+The upstream DLL contains the legacy x64 kernel helper as a resource and may
+install/open it on first use. The application therefore will not call the DLL
+unless all of these conditions are met:
+
+1. trusted Apple-hardware evidence was found;
+2. the process is native x64 and elevated;
+3. the bundled DLL hash matches exactly; and
+4. the operator passed `--accept-inpout-driver`.
+
+InpOut is legacy and intentionally grants direct hardware-port access. Do not
+reuse this binary as a general-purpose privileged interface. The current
+milestone targets Windows 7 SP1 x64; later Windows versions may block legacy
+direct-I/O drivers.
+
+## Protocol references
+
+The SMC implementation was independently written for this project using the
+public protocol facts documented by the Linux `applesmc` driver. No Linux
+kernel source is included or linked into the application.
+
+- Linux `applesmc` reference: <https://github.com/torvalds/linux/blob/master/drivers/hwmon/applesmc.c>
+- Linux source license: GPL-2.0-only
+
+The protocol constants, four-character key identifiers, byte formats, and
+port transaction behavior are interoperability facts. See `docs/SMC.md` for
+the exact subset implemented here.
