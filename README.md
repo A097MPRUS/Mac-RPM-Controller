@@ -3,7 +3,9 @@
 Mac RPM Controller is an independent fan-monitoring and fan-control utility for
 compatible Intel Apple computers running Windows through Boot Camp.
 
-[**Download Mac RPM Controller 0.9.0 — universal x64 installer**](MacRPMController-0.9.0-Setup-x64.exe)
+[**Open the Mac RPM Controller website**](https://a097mprus.github.io/Mac-RPM-Controller/)
+
+[**Download Mac RPM Controller 0.9.0 — universal x64 installer**](https://a097mprus.github.io/Mac-RPM-Controller/MacRPMController-0.9.0-Setup-x64.exe)
 
 The installer detects Windows XP Professional x64 SP2, Windows Vista SP2 x64,
 Windows 7 SP1 x64, Windows 10 x64, or Windows 11 x64 and installs the matching
@@ -45,3 +47,4 @@ SHA-256: A6482B98EE31131281414135E2BBF6D52BB09B78FBDCA73679C9A7E020CE968F
 Copyright © 2026 A097MPRUS. Released under the [MIT License](LICENSE).
 The bundled InpOutx64 component has its own attribution in
 [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
+
